@@ -67,7 +67,6 @@ function find(value, array) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
       return true;
-      console.log("True");
     }
   }
   return false;
