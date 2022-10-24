@@ -61,13 +61,19 @@ console.log(result);
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
+let numbers = [1, 2, 3, 4, 5];
 
-// let numbers = [1,2, 3, 4, 5]
-// function find(value, array) {
-//   if (){return true;}
-//   else {return false;}
-// }
-
+function find(value, array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+      console.log("True");
+    }
+  }
+  return false;
+}
+console.log(find(2, numbers));
+console.log(find(7, numbers));
 // ----------------------
 // Stretch Goals
 // ----------------------
